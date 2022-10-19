@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SharedPreference">
+
+    <Button
+        android:id="@+id/save_btn"
+        android:text="저장"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+    </Button>
+
+    <Button
+        android:id="@+id/loat_btn"
+        android:text="불러오기"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+    </Button>
+
+
+    <Button
+        android:id="@+id/delete_btn"
+        android:text="부분 지우기기"
+       android:layout_width="100dp"
+        android:layout_height="100dp">
+    </Button>
+
+    <Button
+        android:id="@+id/delete_all_btn"
+        android:text="전체 지우기기"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+    </Button>
+
+</LinearLayout>

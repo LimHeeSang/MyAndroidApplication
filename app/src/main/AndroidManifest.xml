@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 권한등록 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:name=".MasterApplication"><!--activity보다 상위의 개념 application에 등록 레트로핏과 관련된거 다른 activity에 걸쳐 전반적으로 다루고 싶을때 application단이 더 먼져 호출함을 의미-->
+
+        <activity android:name=".PermissionActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+
+        <!--<activity android:name=".EmailSignupActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>-->
+
+        <!--<activity android:name=".PermissionActivity"></activity>-->
+        <!--<activity android:name=".RetrofitLibraryActivity"></activity> &lt;!&ndash; <activity android:name=".RecyclerViewByActivity" /> &ndash;&gt;-->
+        <activity android:name=".NewworkActivity" />
+        <activity android:name=".AsyncActivity" />
+        <activity android:name=".RealmActivity" />
+        <activity android:name=".SharedPreference" />
+        <activity android:name=".TabPager2Activity" />
+        <activity android:name=".TabPagerActivity" />
+
+        <activity android:name=".PhoneBookWithRecyclerViewActivity" />
+
+        <activity android:name=".RecyclerViewActivity" />
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".InfoAddress" />
+        <activity android:name=".PhoneAddress" />
+        <activity android:name=".AddViewActivity" />
+        <activity android:name=".LibraryActivity" />
+        <activity android:name=".ThreadActivity" />
+        <activity android:name=".Context" />
+        <activity android:name=".Resource" />
+        <activity android:name=".NullSafety" />
+        <activity android:name=".FragmentActivity" />
+        <activity android:name=".EditTextPractice" />
+        <activity android:name=".Intent2" />
+        <activity android:name=".Intent1" />
+        <activity android:name=".listener" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
